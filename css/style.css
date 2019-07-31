@@ -1,0 +1,10 @@
+.container {
+    background-image: url(../image/fony.png);
+}
+.nav-link {
+    color:  rgb(54, 13, 13);
+}
+.main {
+    background-color: rgb(86, 250, 127);
+}
+
