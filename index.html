@@ -10,39 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="./menu.html">
 </head>
 <body>
     <div class="container">
-        <div class="row main">
-          <div class="col-sm-2">
-                <img class="logo" src="image/meditation.png" alt="logo" width="60" height="60">
-          </div>
-          <div class="col-sm-10">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="stock.html">Акции</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="advantages.html">Наши преиущества</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="price.html">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="certificate.html">Подарить сертификат</a>
-                  </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="training.html">Обучение</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.htmlS">Контакты</a>
-                    </li>
-                </ul>
-          </div>
-        </div>
+        <div class="main" id="menuContent"></div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -64,7 +36,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        
+   
         <div class="row">
           <div class="col-sm-12"><h1>Симфония тела</h1></div>
         </div>
@@ -116,5 +88,10 @@
             </div>
           </div>
       </div>    
+<script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#menu');
+  document.querySelector('#menuContent').appendChild(content.cloneNode(true));
+</script>
 </body>
 </html>

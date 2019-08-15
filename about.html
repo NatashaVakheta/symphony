@@ -10,18 +10,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="./menu.html">
 </head>
 <body>
     <div class="container">
+        <div class="main" id="menuContent"></div>
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="..." class="card-img-top" alt="You foto">
                 <div class="card-body">
-                    <h5 class="card-title">Название карточки</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                    <h5 class="card-title"> ФИО</h5>
+                    <p class="card-text"> Здесь будет информация о вас, кто вы, ваш опыт, основные принцыпы.</p>
+                    <a href="#" class="btn btn-primary">Подробнее о нас</a>
                 </div>
         </div>
     </div>
-    
+<script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('#menu');
+    document.querySelector('#menuContent').appendChild(content.cloneNode(true));
+</script>
 </body>
 </html>
