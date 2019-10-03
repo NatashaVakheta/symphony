@@ -1,10 +1,17 @@
 .container {
-    background-image: url(../image/fony.png);
+    background-image: url();
 }
 .nav-link {
     color:  rgb(54, 13, 13);
 }
 .main {
-    background-color: rgb(86, 250, 127);
+    border: 2px solid rgb(121, 55, 55);
+    margin: 5px;
 }
 
+h1 {
+    color:  rgb(133, 54, 54);
+}
+.header-h1 {
+    
+}
